@@ -118,15 +118,10 @@ To reproduce CLUE-LDS experiments:
 #### experiments:
   scripts:
    ```bash
-   python evaluate.py --csv data.csv
+      python evaluate.py --csv data.csv
 
-  preprocessing:
-    - datasets/cert/preprocess_cert.py
-    - datasets/cert/build_ground_truth.py
-  reproducibility:
-    random_seeds_fixed: true
-    scaling: StandardScaler (train-only)
-    evaluation_metrics:
+  
+#### evaluation_metrics:
       - ROC-AUC
       - PR-AUC
       - F1
