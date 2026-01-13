@@ -118,7 +118,8 @@ To reproduce CLUE-LDS experiments:
 #### experiments:
   scripts:
   ```bash
-   python evaluate.py --csv data.csv 
+   python evaluate.py --csv data.csv
+
   preprocessing:
     - datasets/cert/preprocess_cert.py
     - datasets/cert/build_ground_truth.py
