@@ -36,9 +36,6 @@ The framework is evaluated on:
 
 ---
 
-
----
-
 ## Datasets
 
 ### CLUE-LDS
@@ -116,17 +113,18 @@ To reproduce CLUE-LDS experiments:
     
 
 #### experiments:
+  experiments:
   scripts:
-   ```bash
-      python evaluate.py --csv data.csv
+    - command: python evaluate.py --csv data.csv
+      description: Run full evaluation pipeline on extracted feature CSV
 
-  
 #### evaluation_metrics:
-      - ROC-AUC
-      - PR-AUC
-      - F1
-      - Precision
-      - Recall
+  - ROC-AUC
+  - PR-AUC
+  - F1
+  - Precision
+  - Recall
+
 
 #### key_results:
   cert_500:
