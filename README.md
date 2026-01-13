@@ -117,7 +117,7 @@ To reproduce CLUE-LDS experiments:
 
 #### experiments:
   scripts:
-  ```bash
+   ```bash
    python evaluate.py --csv data.csv
 
   preprocessing:
